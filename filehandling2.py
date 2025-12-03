@@ -1,10 +1,9 @@
 try:
     with open("config.txt", "r") as file:
         name = file.read()
-        print("Welcome ", name)
 except FileNotFoundError:
     with open("config.txt", "w") as file:
-        file.write("Saraa")
+        file.write("Guest")
     with open("config.txt", "r") as file:
-        name = file.read()
-        print("Welcome", name)
+        name = file.read()     
+print("Welcome", name)
